@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".NotesTakerActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNotes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageViewSave"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="10dp"
+                android:src="@drawable/ic_save"/>
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:hint="Title"
+        android:textColorHint="@color/darkGrey"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/editTextNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Your Thoughts:"
+        android:textColorHint="@color/darkGrey"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"/>
+</LinearLayout>
